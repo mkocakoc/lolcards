@@ -22,11 +22,56 @@ code {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+
 }
 .champions .champion {
-  flex-basis: 20%;
-  text-align: center;
+     flex-basis: 17%;
+    text-align: center;
+    background-position-y: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    aspect-ratio: 3/5.7;
 }
+.champion_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.champion_info__stats {
+  display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 .champions img {
   border-radius: 1rem;
+  width: 24px;
+  background: #ffbebe;
+}
+.champion_info__stats__item__value {
+    background: #fff;
+    border-radius: 250%;
+    color: #dc0005;
+    font-weight: 600;
+}
+.champion_info__tags {
+  display: flex;
+    justify-content: space-evenly;
+    background: rgba(250, 145, 80, 0.5);
+    padding: 0.3rem;
+    color: #fff;
+}
+.champion_content{
+  background: rgba(100, 100, 50, 0.5);
+  color: #fff;
+  padding: 0 1rem;
+  font-size: .7rem;
+}
+.champion_content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

@@ -41,10 +41,10 @@ const Champions = () => {
     return (
         <div className='champions'>
             {championsList.map((champion) => (
-                <div className='champion' key={champion.id}>
-                    <div className='champion__image'>
-                        <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg`} alt={champion.name} />
-                    </div>
+                <div className='champion' key={champion.id}   style={{
+                    backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg')`,
+                    backgroundRepeat: 'no-repeat',
+                  }}>                   
                     <div className='champion_info'>
                         <div className='champion_info__stats'>
                             <div className='champion_info__stats__item'>
